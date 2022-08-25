@@ -50,8 +50,8 @@ modules:
         only-arches:
           - x86_64
         dest-filename: twine.zip
-        url: "https://github.com/klembot/twinejs/releases/download/2.3.16/twine_2.3.16_linux64.zip"
-        sha256: "f6d75166e12effd9c620e5347e296af99eca6aed86b5ed056be21fc12bbbcf8b"
+        url: "https://github.com/klembot/twinejs/releases/download/2.4.1/Twine-2.4.1-Linux-x64.zip"
+        sha256: "0970f2c246f25d4d0c00067674be34604a1cf184ca7d1ed4166686f35e31311f"
         x-checker-data:
           type: anitya
           project-id: 236298
