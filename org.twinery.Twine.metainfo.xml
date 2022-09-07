@@ -23,14 +23,6 @@
     <release version="2.3.15" date="2021-10-22"/>
   </releases>
   <screenshots>
-    <screenshot type="default">
-      <caption>Main overview</caption>
-      <image type="source">https://twinery.org/homepage/img/twine2-storylist.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Story overview</caption>
-      <image type="source">https://twinery.org/homepage/img/twine2-storymap.png</image>
-    </screenshot>
   </screenshots>
   <content_rating type="oars-1.1" />
   <launchable type="desktop-id">org.twinery.Twine.desktop</launchable>
