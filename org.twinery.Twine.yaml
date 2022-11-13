@@ -54,6 +54,11 @@ modules:
         dest-filename: twine.zip
         url: "https://github.com/klembot/twinejs/releases/download/2.5.1/Twine-2.5.1-Linux-x64.zip"
         sha256: "80877dc0c05dfdd03ad6254f21645f373cd0dc5d524bb07aa8fbb9dbda0eadc2"
+        x-checker-data:
+            type: json
+            url: "https://api.github.com/repos/klembot/twinejs/releases/latest"
+            version-query: ".tag_name"
+            url-query: ".assets[] | select(.name==\"Twine-\" + $version + \"Linux-x64.zip\") | .browser_download_url"
       - type: "script"
         dest-filename: "twine.sh"
         commands:
