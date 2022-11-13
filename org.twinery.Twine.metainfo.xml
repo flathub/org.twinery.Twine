@@ -18,19 +18,10 @@
     <control>keyboard</control>
   </recommends>
   <releases>
+    <release version="2.5.1" date="2022-08-28"/>
     <release version="2.3.16" date="2022-01-09"/>
     <release version="2.3.15" date="2021-10-22"/>
   </releases>
-  <screenshots>
-    <screenshot type="default">
-      <caption>Main overview</caption>
-      <image type="source">https://twinery.org/homepage/img/twine2-storylist.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Story overview</caption>
-      <image type="source">https://twinery.org/homepage/img/twine2-storymap.png</image>
-    </screenshot>
-  </screenshots>
   <content_rating type="oars-1.1" />
   <launchable type="desktop-id">org.twinery.Twine.desktop</launchable>
   <update_contact>flathub-twine@sheogorath.shivering-isles.com</update_contact>

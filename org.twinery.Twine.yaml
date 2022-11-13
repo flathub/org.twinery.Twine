@@ -52,13 +52,13 @@ modules:
         only-arches:
           - x86_64
         dest-filename: twine.zip
-        url: "https://github.com/klembot/twinejs/releases/download/2.3.16/twine_2.3.16_linux64.zip"
-        sha256: "f6d75166e12effd9c620e5347e296af99eca6aed86b5ed056be21fc12bbbcf8b"
+        url: "https://github.com/klembot/twinejs/releases/download/2.5.1/Twine-2.5.1-Linux-x64.zip"
+        sha256: "80877dc0c05dfdd03ad6254f21645f373cd0dc5d524bb07aa8fbb9dbda0eadc2"
         x-checker-data:
-          type: anitya
-          project-id: 236298
-          stable-only: true
-          url-template: "https://github.com/klembot/twinejs/releases/download/$version/twine_$version_linux64.zip"
+          type: json
+          url: "https://api.github.com/repos/klembot/twinejs/releases/latest"
+          version-query: ".tag_name"
+          url-query: ".assets[] | select(.name==\"Twine-\" + $version + \"-Linux-x64.zip\") | .browser_download_url"
       - type: "script"
         dest-filename: "twine.sh"
         commands:
@@ -70,6 +70,6 @@ modules:
         path: "org.twinery.Twine.desktop"
       - type: "file"
         dest-filename: "org.twinery.Twine.svg"
-        url: "https://raw.githubusercontent.com/klembot/twinejs/2.3.15/icons/app.svg"
-        sha256: "652e658a630a6b34146ea648aba22b52cb63ff230da00d6a1717795df43dc6e7"
+        url: "https://raw.githubusercontent.com/klembot/twinejs/develop/icons/app-release.svg"
+        sha256: "bfad8a4d9646d6616a5f6502b4095f233fdf69b347935bfd830e09d7923c9cab"
 
