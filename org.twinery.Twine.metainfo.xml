@@ -20,11 +20,11 @@
   <screenshots>
     <screenshot type="default">
       <caption>Main overview</caption>
-      <image type="source">https://raw.githubusercontent.com/nextcloud/helm/master/screenshots/main.png</image>
+      <image type="source">https://raw.githubusercontent.com/flathub/org.twinery.Twine/0605e42eb1a7480746df2676453b553c9ea70043/screenshots/main.png</image>
     </screenshot>
     <screenshot>
       <caption>Story overview</caption>
-      <image type="source">https://raw.githubusercontent.com/nextcloud/helm/master/screenshots/story.png</image>
+      <image type="source">https://raw.githubusercontent.com/flathub/org.twinery.Twine/0605e42eb1a7480746df2676453b553c9ea70043/screenshots/story.png</image>
     </screenshot>
   </screenshots>
   <releases>
