@@ -1,11 +1,10 @@
----
-app-id: "org.twinery.Twine"
+app-id: org.twinery.Twine
 base: org.electronjs.Electron2.BaseApp
 base-version: '22.08'
-runtime: "org.freedesktop.Platform"
-runtime-version: "22.08"
-sdk: "org.freedesktop.Sdk"
-command: "twine-wrapper"
+runtime: org.freedesktop.Platform
+runtime-version: '22.08'
+sdk: org.freedesktop.Sdk
+command: twine-wrapper
 copy-icon: true
 separate-locales: false
 finish-args:
@@ -25,17 +24,17 @@ finish-args:
   # Allows to safe stories (Twine uses this directory by default)
   - --filesystem=xdg-documents/Twine:create
 cleanup:
-  - "/include"
-  - "/lib/pkgconfig"
-  - "/lib/*.la"
-  - "/lib/*.a"
-  - "/share/pkgconfig"
-  - "/share/aclocal"
-  - "/share/gtk-doc"
-  - "/share/doc"
-  - "/share/info"
-  - "/share/man"
-  - "/man"
+  - /include
+  - /lib/pkgconfig
+  - /lib/*.la
+  - /lib/*.a
+  - /share/pkgconfig
+  - /share/aclocal
+  - /share/gtk-doc
+  - /share/doc
+  - /share/info
+  - /share/man
+  - /man
 modules:
   - name: twine
     buildsystem: simple
@@ -52,24 +51,25 @@ modules:
         only-arches:
           - x86_64
         dest-filename: twine.zip
-        url: "https://github.com/klembot/twinejs/releases/download/2.6.1/Twine-2.6.1-Linux-x64.zip"
-        sha256: "79cb8f23b2088836e01040a68541de7dc710bfb34205774d2b379fa2f03464e8"
+        url: https://github.com/klembot/twinejs/releases/download/2.6.2/Twine-2.6.2-Linux-x64.zip
+        sha256: e81dc0a5f630909dbc33495e60dbd10d1829674cf5ea2e0994474fdb6d15c138
         x-checker-data:
           type: json
-          url: "https://api.github.com/repos/klembot/twinejs/releases/latest"
-          version-query: ".tag_name"
-          url-query: ".assets[] | select(.name==\"Twine-\" + $version + \"-Linux-x64.zip\") | .browser_download_url"
-      - type: "script"
-        dest-filename: "twine.sh"
+          url: https://api.github.com/repos/klembot/twinejs/releases/latest
+          version-query: .tag_name
+          url-query: .assets[] | select(.name=="Twine-" + $version + "-Linux-x64.zip")
+            | .browser_download_url
+      - type: script
+        dest-filename: twine.sh
         commands:
           - export TMPDIR="$XDG_RUNTIME_DIR/app/${FLATPAK_ID:-org.twinery.Twine}"
           - exec zypak-wrapper "/app/twine/twine" "$@"
-      - type: "file"
-        path: "org.twinery.Twine.metainfo.xml"
-      - type: "file"
-        path: "org.twinery.Twine.desktop"
-      - type: "file"
-        dest-filename: "org.twinery.Twine.svg"
-        url: "https://raw.githubusercontent.com/klembot/twinejs/develop/icons/app-release.svg"
-        sha256: "bfad8a4d9646d6616a5f6502b4095f233fdf69b347935bfd830e09d7923c9cab"
+      - type: file
+        path: org.twinery.Twine.metainfo.xml
+      - type: file
+        path: org.twinery.Twine.desktop
+      - type: file
+        dest-filename: org.twinery.Twine.svg
+        url: https://raw.githubusercontent.com/klembot/twinejs/develop/icons/app-release.svg
+        sha256: bfad8a4d9646d6616a5f6502b4095f233fdf69b347935bfd830e09d7923c9cab
 
