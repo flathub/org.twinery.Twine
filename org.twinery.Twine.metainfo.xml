@@ -28,6 +28,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="2.6.2" date="2023-02-27">
+      <description>
+        <p>New Features Added</p>
+        <p> The "Start Story Here" checkbox in passage edit dialogs has been replaced with "Test from Here".</p>
+        <p>Story Format Updates</p>
+        <p>Chapbook has been updated to version 1.2.3.</p>
+        <p>Harlowe has been updated to version 3.3.5.</p>
+      </description>
+    </release>
     <release version="2.6.1" date="2023-02-5"/>
     <release version="2.3.16" date="2022-01-09"/>
     <release version="2.3.15" date="2021-10-22"/>
