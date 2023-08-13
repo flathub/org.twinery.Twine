@@ -3,7 +3,7 @@
   <id>org.twinery.Twine</id>
   <name>Twine</name>
   <developer_name>Chris Klimas</developer_name>
-  <summary>Twine is an open-source tool for telling interactive, nonlinear stories.</summary>
+  <summary>Twine is an open-source tool for telling interactive, nonlinear stories</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
   <url type="homepage">https://twinery.org/</url>
