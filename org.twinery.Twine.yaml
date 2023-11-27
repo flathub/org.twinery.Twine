@@ -51,8 +51,8 @@ modules:
         only-arches:
           - aarch64
         dest-filename: twine.zip
-        url: https://github.com/klembot/twinejs/releases/download/2.7.1/Twine-2.7.1-Linux-arm64.zip
-        sha256: c53d3a49759ad03eac16a54fcda7bccd99bb1f28d6a45404d47e2ed20e1f044c
+        url: https://github.com/klembot/twinejs/releases/download/2.8.0/Twine-2.8.0-Linux-arm64.zip
+        sha256: 39e1dcd50842226e4b7927a66bf9d6112a0b704a6ae9bbab79b4591b09268876
         x-checker-data:
           type: json
           url: https://api.github.com/repos/klembot/twinejs/releases/latest
@@ -63,8 +63,8 @@ modules:
         only-arches:
           - x86_64
         dest-filename: twine.zip
-        url: https://github.com/klembot/twinejs/releases/download/2.7.1/Twine-2.7.1-Linux-x64.zip
-        sha256: 7f626caa991eea0d6fa0f4132eeda9c8c4620f8fd3c3635d7050b8235c5bc534
+        url: https://github.com/klembot/twinejs/releases/download/2.8.0/Twine-2.8.0-Linux-x64.zip
+        sha256: 2f8a2e1e5fe0fa3793022c9a834c19c9bbd77768ef951626c00948deaf1d5372
         x-checker-data:
           type: json
           url: https://api.github.com/repos/klembot/twinejs/releases/latest
