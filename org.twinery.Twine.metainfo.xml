@@ -41,6 +41,11 @@
           <li>Story format list is now a dialog instead of a separate screen</li>
           <li>New preference has been added that allows disabling enhanced text editors, which can have problems with assistive technology</li>
         </ul>
+        <p>Story formats:</p>
+        <ul>
+          <li>Chapbook 2.3.0, Harlowe 3.3.9, Snowman 2.0.2, and SugarCube 2.37.3 come built-in, and are updated when the application is</li>
+          <li>Additional story formats, or different versions of the built-in formats may be added manually</li>
+        </ul>
       </description>
     </release>
     <release version="2.9.0" date="2024-06-16">
