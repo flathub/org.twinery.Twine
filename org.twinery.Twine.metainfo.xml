@@ -7,6 +7,8 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
   <url type="homepage">https://twinery.org/</url>
+  <url type="vcs-browser">https://github.com/klembot/twinejs</url>
+  <url type="faq">https://twinery.org/reference/en/</url>
   <description>
     <p>Twine is an open-source tool for telling interactive, nonlinear stories.</p>
     <p>You don't need to write any code to create a simple story with Twine, but you can extend your stories with variables, conditional logic, images, CSS, and JavaScript when you're ready.</p>
@@ -27,20 +29,88 @@
       <image type="source">https://raw.githubusercontent.com/flathub/org.twinery.Twine/0605e42eb1a7480746df2676453b553c9ea70043/screenshots/story.png</image>
     </screenshot>
   </screenshots>
+ <branding>
+    <color type="primary" scheme_preference="light">#87f6de</color>
+    <color type="primary" scheme_preference="dark">#0a5448</color>
+  </branding>
   <releases>
-    <release version="2.7.1" date="2023-08-17"/>
-    <release version="2.6.2" date="2023-02-27">
+    <release version="2.10.0" date="2024-11-24">
+      <url type="details">https://twinery.org/reference/en/release-notes/2-10.html#2100</url>
       <description>
-        <p>New Features Added</p>
-        <p> The "Start Story Here" checkbox in passage edit dialogs has been replaced with "Test from Here".</p>
-        <p>Story Format Updates</p>
-        <p>Chapbook has been updated to version 1.2.3.</p>
-        <p>Harlowe has been updated to version 3.3.5.</p>
+        <ul>
+          <li>Story format list is now a dialog instead of a separate screen</li>
+          <li>New preference has been added that allows disabling enhanced text editors, which can have problems with assistive technology</li>
+        </ul>
       </description>
     </release>
-    <release version="2.6.1" date="2023-02-5"/>
-    <release version="2.3.16" date="2022-01-09"/>
-    <release version="2.3.15" date="2021-10-22"/>
+    <release version="2.9.0" date="2024-06-16">
+      <url type="details">https://twinery.org/reference/en/release-notes/2-9.html#290</url>
+      <description>
+        <ul>
+          <li>data-tag attribute is added to passage cards in the story map, which can be targeted using custom CSS</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.8.0" date="2023-11-27">
+      <url type="details">https://twinery.org/reference/en/release-notes/2-8.html#twine-280</url>
+      <description>
+        <ul>
+          <li>New preferences have been added for changing the location of the story library, and for disabling hardware accelerated graphics</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.7.0" date="2023-07-08">
+      <url type="details">https://twinery.org/reference/en/release-notes/2-7.html#twine-270</url>
+      <description>
+        <ul>
+          <li>Passage edit dialogs now show leading and trailing whitespace in passage names as ␣ symbols to help tracking down accidental spaces</li>
+          <li>Zoom controls in the story map have been moved into the top toolbar, so that the amount of space in the story map is increased</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.6.2" date="2023-02-27">
+      <url type="details">https://twinery.org/reference/en/release-notes/2-6.html#twine-262</url>
+      <description>
+        <ul>
+          <li>"Start Story Here" checkbox in passage edit dialogs has been replaced with "Test from Here"</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.6.0" date="2023-01-08">
+      <url type="details">https://twinery.org/reference/en/release-notes/2-6.html#twine-260</url>
+      <description>
+        <ul>
+          <li>When a second passage edit dialog is opened after one is already open, the new dialog appears on top of the existing one, forming a stack</li>
+          <li>Added a Go To button to the story map toolbar, which allows moving to a passage by name</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.5.0" date="2022-08-27">
+      <url type="details">https://twinery.org/reference/en/release-notes/2-5.html#twine-250</url>
+      <description>
+        <ul>
+          <li>Passages considered "empty" now show with a translucent background</li>
+          <li>If the last link to an empty passage is removed, an empty passage will be deleted</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.4.0" date="2022-07-05">
+      <url type="details">https://twinery.org/reference/en/release-notes/2-4.html#twine-240</url>
+      <description>
+        <ul>
+          <li>All detail dialogs, like the find and replace text dialog, are now modeless, meaning that you can do other work in your story while they're open</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.3.0" date="2019-04-14">
+      <url type="details">https://twinery.org/reference/en/release-notes/2-3.html#twine-230</url>
+      <description>
+        <ul>
+          <li>Desktop app now uses Electron instead of NW.js</li>
+          <li>Files in the story directory are now published as full-fledged stories, where possible</li>
+        </ul>
+      </description>
+    </release>
   </releases>
   <content_rating type="oars-1.1" />
   <launchable type="desktop-id">org.twinery.Twine.desktop</launchable>
