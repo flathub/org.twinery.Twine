@@ -1,28 +1,29 @@
 app-id: org.twinery.Twine
 base: org.electronjs.Electron2.BaseApp
-base-version: '23.08'
+base-version: '25.08'
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: twine-wrapper
 copy-icon: true
 separate-locales: false
 finish-args:
   # Required due to being a GUI application
-  - --socket=x11
-  # Required to make sure x11 performance is achived on all platforms
-  # At least that's what the legends tell. it might be worth experimenting
-  # with dropping this permission.
+  - --socket=wayland
+  - --socket=fallback-x11
+  # Required to make sure X11 is more performant if used.
   - --share=ipc
   # Required to download remote story formats.
   - --share=network
-  # Required to improve Electron performance with hardware accrelation
+  # Required to improve Electron performance with hardware acceleration
   - --device=dri
   # Allows to send and receive files in the Downloads directory
   # Required until Electron supports portals for load and safe dialogs
   - --filesystem=xdg-download
   # Allows to safe stories (Twine uses this directory by default)
   - --filesystem=xdg-documents/Twine:create
+  # Ensures proper mouse cursor scaling on HiDPI displays under Wayland
+  - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
 cleanup:
   - /include
   - /lib/pkgconfig
