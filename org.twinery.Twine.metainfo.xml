@@ -34,6 +34,18 @@
     <color type="primary" scheme_preference="dark">#0a5448</color>
   </branding>
   <releases>
+    <release version="2.11.0" date="2025-11-02">
+      <url type="details">https://twinery.org/reference/en/release-notes/2-11.html#2110</url>
+      <description>
+        <ul>
+          <li>Electron version has been updated</li>
+          <li>Passage tagging has undergone multiple interface refinements</li>
+          <li>Deselect All button has been added which deselects all passages</li>
+          <li>Find and replace function refined to avoid passage name conflict</li>
+          <li>Snowman story formats have been updated to versions 1.5.0 and 2.1.1</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.10.0" date="2024-11-24">
       <url type="details">https://twinery.org/reference/en/release-notes/2-10.html#2100</url>
       <description>
