@@ -11,7 +11,7 @@ finish-args:
   # Required due to being a GUI application, with X11 as a fallback
   # if Wayland is unsupported
   - --socket=wayland
-  - --socket=x11-fallback
+  - --socket=fallback-x11
   # Supposed to make X11 more performant, if used.
   - --share=ipc
   # Required to download remote story formats.
