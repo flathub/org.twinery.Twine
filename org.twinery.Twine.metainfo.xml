@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>org.twinery.Twine</id>
-  <launchable type="desktop-id">org.twinery.Twine.desktop</launchable>
   <name>Twine</name>
+  <summary>Twine is an open-source tool for telling interactive, nonlinear stories</summary>
+
   <developer id="org.twinery">
     <name>Chris Klimas</name>
   </developer>
-  <summary>Twine is an open-source tool for telling interactive, nonlinear stories</summary>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3.0</project_license>
+  
   <url type="homepage">https://twinery.org/</url>
   <url type="vcs-browser">https://github.com/klembot/twinejs</url>
   <url type="faq">https://twinery.org/reference/en/</url>
+  
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+
   <description>
     <p>Twine is an open-source tool for telling interactive, nonlinear stories.</p>
     <p>You don't need to write any code to create a simple story with Twine, but you can extend your stories with variables, conditional logic, images, CSS, and JavaScript when you're ready.</p>
     <p>Twine publishes directly to HTML, so you can post your work nearly anywhere. Anything you create with it is completely free to use any way you like, including for commercial purposes.</p>
     <p>Twine was originally created by Chris Klimas in 2009 and is now maintained by a whole bunch of people at several different repositories.</p>
   </description>
+  
   <recommends>
     <control>pointing</control>
     <control>keyboard</control>
   </recommends>
+
   <screenshots>
     <screenshot type="default">
       <caption>Main overview</caption>
@@ -32,10 +37,12 @@
       <image type="source">https://raw.githubusercontent.com/flathub/org.twinery.Twine/0605e42eb1a7480746df2676453b553c9ea70043/screenshots/story.png</image>
     </screenshot>
   </screenshots>
- <branding>
+  
+  <branding>
     <color type="primary" scheme_preference="light">#87f6de</color>
     <color type="primary" scheme_preference="dark">#0a5448</color>
   </branding>
+
   <releases>
     <release version="2.12.0" date="2026-04-10">
       <url type="details">https://twinery.org/reference/en/release-notes/2-12.html#2120</url>
@@ -144,6 +151,7 @@
       </description>
     </release>
   </releases>
+
   <content_rating type="oars-1.1" />
   <launchable type="desktop-id">org.twinery.Twine.desktop</launchable>
   <update_contact>flathub-twine@sheogorath.shivering-isles.com</update_contact>
