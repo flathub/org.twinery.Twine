@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
+<component type="desktop-application">
   <id>org.twinery.Twine</id>
+  <launchable type="desktop-id">org.twinery.Twine.desktop</launchable>
   <name>Twine</name>
-  <developer_name>Chris Klimas</developer_name>
+  <developer id="org.twinery">
+    <name>Chris Klimas</name>
+  </developer>
   <summary>Twine is an open-source tool for telling interactive, nonlinear stories</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
@@ -34,6 +37,18 @@
     <color type="primary" scheme_preference="dark">#0a5448</color>
   </branding>
   <releases>
+    <release version="2.12.0" date="2026-04-10">
+      <url type="details">https://twinery.org/reference/en/release-notes/2-12.html#2120</url>
+      <description>
+        <ul>
+          <li>Electron version has been updated to 41</li>
+          <li>Multiple suggestions are now shown when adding tags</li>
+          <li>Preference added where tags now appear as badges with names on passage cards</li>
+          <li>Japanese localization has been added</li>
+          <li>Chapbook story format has been updated to 2.3.1</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.11.0" date="2025-11-02">
       <url type="details">https://twinery.org/reference/en/release-notes/2-11.html#2110</url>
       <description>
